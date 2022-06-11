@@ -14,7 +14,6 @@ Let's make some ice cream!
    - Fetch the `ice cream` object based on the `id` received in the parameter
    - Add the following context to be injected into your template:
      - `name`: the ice cream's name as a string
-     - `flavor`: the ice cream's flavor as a string
      - `shop`: the ice cream's shop name as a string
      - `stock`: the ice cream's current stock as an integer
 2. Add your `get_ice_cream` view to `bareed/url.py`.
@@ -34,7 +33,7 @@ Let's make some ice cream!
 ### List View
 
 1. Go to `shops/views.py`, and add a `get_ice_creams` view function that takes in a `request`, and `renders` a template named `ice_cream_list.html`.
-   - Your context should include the `name`s, `flavor`s, and `shop` names of all ice creams
+   - Your context should include the `name`s, `flavors` (as a list of strings), and `shop` names of all ice creams
 2. Add your `get_ice_creams` view to `bareed/url.py` and name it `ice-cream-list`.
 3. Create a `templates` folder inside of `shops` and add an `ice_cream_list.html`.
    - The template should render the entire context passed to it

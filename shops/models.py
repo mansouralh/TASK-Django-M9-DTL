@@ -28,7 +28,7 @@ class IceCreamFlavor(models.Model):
 
 class IceCream(models.Model):
     name = models.CharField(max_length=40)
-    flavor = models.ManyToManyField(IceCreamFlavor, related_name="ice_creams")
+    flavors = models.ManyToManyField(IceCreamFlavor, related_name="ice_creams")
     shop = models.ForeignKey(
         Shop,
         on_delete=models.CASCADE,
