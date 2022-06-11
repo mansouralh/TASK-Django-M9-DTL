@@ -27,7 +27,7 @@ Let's make some ice cream!
 ### Detail View Bonus
 
 1. In the detail view wrap your fetch in a `try-except` block and raise an `Http404` if the ice cream id does not exist.
-2. Run the tests using `pytest -m detail-bonus` and pass all tests.
+2. Run the tests using `pytest -m detail_bonus` and pass all tests.
 3. Commit your code and push.
 
 ### List View
