@@ -41,3 +41,7 @@ Let's make some ice cream!
 4. Run the server and check out your beautiful ice creams.
 5. Run the tests using `pytest -m list` and pass all tests.
 6. Commit your code and push.
+
+### List View Bonus
+
+Add a button that links each ice icream in the list view that redirects the user to the detail page.
