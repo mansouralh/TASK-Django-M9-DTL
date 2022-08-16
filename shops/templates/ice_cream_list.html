@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ice creams list</title>
+  </head>
+  <body>
+    <div>
+      {% for ice_cream in ice_creams %}
+        <h1>{{ice_cream.id}} - {{ice_cream.name}}</h1>
+
+                <h2>flavors: </h2> {% for flavors in ice_cream.flavors.all %} <p> {{ flavors }}</p>{% endfor %}
+
+          <h2> shop name: {{ ice_cream.shop }}</h2>
+
+          <a href="{%url 'ice-cream-detail' ice_cream_id=ice_cream.id %}"><button>Details</button></a>
+
+
+
+      <hr />
+      {% endfor %}
+    </div>
+  </body>
+</html>
